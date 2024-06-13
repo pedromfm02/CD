@@ -1,0 +1,23 @@
+Subscribe - mensagem de subscrição de um tópico:
+
+-> {"command":"Subscribe","topic": topic}
+
+Publish - mensagem de publicação num tópico:
+
+-> {"command":"Publish","topic": topic, "value": value}
+
+ListRequest - mensagem de pedido de listagem de tópicos:
+
+-> {"command":"ListRequest"}
+
+ListReply - mensagem que contém a listagem dos tópicos:
+
+-> {"command": "ListReply", "topic_list": topic_list}
+
+UnSubcribe - mensagem de cancelamentto de subscrição de um tópico:
+
+-> {"command":"UnSubcribe","topic": topic}
+
+Acknowledge - mensagem para informar o broker da linguagem de serialização
+
+-> {"command":"Ack", "language": language}
